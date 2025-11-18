@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Session Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex-grow pb-24">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-[#111318] dark:text-white flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-[#111318] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Session Details</h2>
+<div class="relative flex size-12 shrink-0 items-center justify-center text-[#111318] dark:text-white">
+<input class="peer hidden" id="menu-toggle" type="checkbox"/>
+<label class="cursor-pointer" for="menu-toggle">
+<span class="material-symbols-outlined">more_vert</span>
+</label>
+<div class="absolute right-0 top-full z-20 mt-2 w-56 origin-top-right scale-95 transform rounded-lg bg-white p-2 opacity-0 shadow-lg ring-1 ring-black ring-opacity-5 transition-all duration-200 ease-in-out peer-checked:scale-100 peer-checked:opacity-100 dark:bg-gray-800 dark:ring-white dark:ring-opacity-10">
+<a class="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+<span>Agenda</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">group</span>
+<span>Speakers</span>
+</a>
+<div class="my-2 h-px bg-gray-200 dark:bg-gray-700"></div>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">bookmark</span>
+<span>My Schedule</span>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">info</span>
+<span>Info</span>
+</a>
+</div>
+</div>
+</div>
+<div class="p-4 space-y-6">
+<div class="space-y-4">
+<div class="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Track A</div>
+<h1 class="text-2xl font-bold text-[#111318] dark:text-white">The Future of Scalable UI</h1>
+<div class="flex items-center gap-4 text-sm text-[#616f89]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">schedule</span>
+<span>9:00 AM - 10:00 AM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">location_on</span>
+<span>Room 201</span>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<h3 class="text-lg font-bold text-[#111318] dark:text-white">About this session</h3>
+<p class="text-[#616f89] dark:text-gray-300 text-base leading-relaxed">
+            Join Elara Vance, CEO of InnovateX, as she unveils cutting-edge strategies for building resilient and scalable user interfaces. This session will delve into component-driven architecture, state management patterns for large-scale applications, and performance optimization techniques that ensure a seamless user experience, no matter the complexity.
+          </p>
+</div>
+<div class="space-y-3">
+<h3 class="text-lg font-bold text-[#111318] dark:text-white">About the speaker</h3>
+<div class="flex items-start gap-4 rounded-xl bg-white dark:bg-gray-800 p-4">
+<div class="h-14 w-14 flex-shrink-0 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCISzoJ6Ubc8_DC1V9Ffg0_dkfrRpbuTIdwtKTqfcjQj5zcnBbTxJNghzQpsQ_JQ_1CrYIGlFXdhagPackTr9a1AmlVAN1iI0zYa67ZrH0XA-JzjyH_RMj-Twcq-EMj1uGKXif0vQIfcb-31yGmPK1ejjcCAIO0yVhCt02huCRVTACCErMWLo93kj8B8Vygq5OFQvJJrhAYkpPLh9yCz8GyogVQlGI4EvCfrjyN3jbGRIuZPKpCmBdy_4UIfqMby2vklJu1VXtFxft2")'></div>
+<div class="flex-1">
+<p class="text-base font-bold text-[#111318] dark:text-white">Elara Vance</p>
+<p class="text-sm text-primary">CEO, InnovateX</p>
+<p class="mt-2 text-sm text-[#616f89] dark:text-gray-300">
+              Elara is a visionary leader with over 15 years of experience in the tech industry, specializing in frontend architecture and user experience design.
+            </p>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<h3 class="text-lg font-bold text-[#111318] dark:text-white">Resources</h3>
+<div class="space-y-3">
+<a class="flex items-center justify-between rounded-xl bg-white dark:bg-gray-800 p-4" href="#">
+<div class="flex items-center gap-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary">slideshow</span>
+</div>
+<div>
+<p class="font-semibold text-[#111318] dark:text-white">View Slides</p>
+<p class="text-sm text-[#616f89]">PDF, 15MB</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#616f89]">chevron_right</span>
+</a>
+<div class="relative w-full overflow-hidden rounded-xl">
+<div class="aspect-video w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDy9iyTexbJcw6USdRRTAvGZ_wGJJF3UFUDFNMQhXSCfbtLOY-w8-xUNhzddIi9NZAHpVNBjCatE8rT0TuY2ybdKQjUvYLR4imXJZzHkJNdK3bSBqVSezcyBxD6QzKOD7zHK4GA_6jcwp571NqTKGZg5YUhcyUb0MKxtQfLOk7DPQsKpAUhKrrmsJO0RGaSsH9cbWKtG6r_ZGi9hAnXlV0zSq5ydgqUt8znpZ3gAwxFXjr9w3SsQecbJeirmbT0ORBXinBupRod8a5W")'></div>
+<div class="absolute inset-0 flex items-center justify-center bg-black/40">
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/30 backdrop-blur-sm">
+<span class="material-symbols-outlined text-4xl text-white" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0">
+<div class="flex border-t border-[#f0f2f4] dark:border-gray-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#616f89]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">home</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#616f89]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Agenda</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700;">group</span>
+</div>
+<p class="text-xs font-bold leading-normal tracking-[0.015em]">Speakers</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#616f89]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">info</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Info</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>

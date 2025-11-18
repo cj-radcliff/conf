@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Breakout Session Ideas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root">
+<header class="sticky top-0 z-20 flex h-16 items-center border-b border-zinc-200/80 dark:border-zinc-800/80 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-zinc-800 dark:text-zinc-200">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-zinc-900 dark:text-zinc-100 flex-1 text-center">Breakout Session Ideas</h1>
+<div class="relative shrink-0" x-data="{ open: false }">
+<button @click="open = !open" class="flex size-10 items-center justify-center rounded-full text-zinc-800 dark:text-zinc-200">
+<span class="material-symbols-outlined text-2xl">more_vert</span>
+</button>
+<div @click.outside="open = false" aria-labelledby="menu-button" aria-orientation="vertical" class="absolute right-0 mt-2 w-56 origin-top-right rounded-xl bg-white dark:bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" tabindex="-1" x-cloak="" x-show="open">
+<div class="py-1" role="none">
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#" role="menuitem" tabindex="-1">
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+<span>Full Schedule</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#" role="menuitem" tabindex="-1">
+<span class="material-symbols-outlined text-xl">person_pin</span>
+<span>My Agenda</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#" role="menuitem" tabindex="-1">
+<span class="material-symbols-outlined text-xl">campaign</span>
+<span>Announcements</span>
+</a>
+<div class="my-1 h-px bg-zinc-200 dark:bg-zinc-800"></div>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#" role="menuitem" tabindex="-1">
+<span class="material-symbols-outlined text-xl">map</span>
+<span>Venue Map</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#" role="menuitem" tabindex="-1">
+<span class="material-symbols-outlined text-xl">groups</span>
+<span>Speakers</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 pt-4 pb-28">
+<div class="flex flex-col gap-3">
+<div class="flex gap-4 bg-white dark:bg-zinc-900 p-4 rounded-xl shadow-sm">
+<div class="flex items-start gap-4 flex-1">
+<img class="rounded-full h-12 w-12 object-cover" data-alt="Portrait of Alex Johnson" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoj2WAfn5zPIS_NlsxgJJmC4qYz4YUAaDloXEvgnXRjoumY0Og8eJQ6edJSdo8dagoyQzcFq3WNA8RulXquS-It822OjTq7VKRVpciSU-nhJAHfQoXwzlDbkV1gylYdm4ADiuIwmqtIKzcHmCux6a-SGJ6-6da6VlWK2_EtCQK51mRP1Z6V8ZvlnVy0OFKsC-SYTMl5Vz_o3_JNW1-EPMtU1z6ERufnoNuu7lY6RifXnpdwdXYynuGqrMD80CgVEtGpgy0u2XnRvuA"/>
+<div class="flex flex-1 flex-col gap-1">
+<p class="text-zinc-900 dark:text-zinc-100 text-base font-bold leading-tight">AI in Product Development</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Exploring how generative AI can accelerate the design and development lifecycle.</p>
+<p class="text-zinc-400 dark:text-zinc-500 text-xs font-medium leading-normal pt-1">Suggested by Alex Johnson</p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 shrink-0">
+<button class="flex size-9 items-center justify-center rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-lg">arrow_upward</span>
+</button>
+<p class="text-primary text-base font-bold leading-normal">128</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-zinc-900 p-4 rounded-xl shadow-sm">
+<div class="flex items-start gap-4 flex-1">
+<img class="rounded-full h-12 w-12 object-cover" data-alt="Portrait of Maria Garcia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA885lZ6qZQjjARSy0hvYVhJCuPHnqd8qVtCjQQ03uyiVWqeBZpResHmAMX2jw9QsjqlpIdhVA2r5oPDLLL6QlwdzbyKzjYlEvaLAD8DG4KhdV0pX4d21fqs_BcHrVLiKQ7NSjZlLT8svkrmen3tTx_w_V-pfa1Ofo9hLk6nzHtsU4CUIIoT-GirOOHpt71YM0_3teQ1JQHsT2OyRdxhPCxL80UIA51jRzfOduyL7uIn2j6KN906R-E9DtIzjqYlOWXopK8BcCmtNrK"/>
+<div class="flex flex-1 flex-col gap-1">
+<p class="text-zinc-900 dark:text-zinc-100 text-base font-bold leading-tight">Advanced Prototyping Techniques</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">A deep-dive into creating high-fidelity, interactive prototypes that feel real.</p>
+<p class="text-zinc-400 dark:text-zinc-500 text-xs font-medium leading-normal pt-1">Suggested by Maria Garcia</p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 shrink-0">
+<button class="flex size-9 items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">
+<span class="material-symbols-outlined text-lg">arrow_upward</span>
+</button>
+<p class="text-zinc-600 dark:text-zinc-300 text-base font-medium leading-normal">97</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-zinc-900 p-4 rounded-xl shadow-sm">
+<div class="flex items-start gap-4 flex-1">
+<img class="rounded-full h-12 w-12 object-cover" data-alt="Portrait of Chen Wei" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcka1j-0QCVo_BVaHEY3JsJ33pNnx8kG7LRQACzvOj_QMdojUuQkHZhi_AOwcq71lx2xYJwvnIVcgUVxDZqfG97Ckle5JgeEvEUXzNIPEVbAF2rcbFYiL5BV-9bfnML89ItjvBvMEL2LgX7I0EzP_0lx_IEwh6ytfHkV93upjjueEhrg5Dy5zp1OmlyeoEr6UZM-kiAyy5A0oQeqXNul3F6rVc3FK34LBB6W5lQJq0C87EpyU_Fbajacq3pN4hLVzWX5qL4SEdZdWJ"/>
+<div class="flex flex-1 flex-col gap-1">
+<p class="text-zinc-900 dark:text-zinc-100 text-base font-bold leading-tight">Building a Scalable Design System</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">From initial components to multi-platform implementation, let's discuss the challenges.</p>
+<p class="text-zinc-400 dark:text-zinc-500 text-xs font-medium leading-normal pt-1">Suggested by Chen Wei</p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 shrink-0">
+<button class="flex size-9 items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">
+<span class="material-symbols-outlined text-lg">arrow_upward</span>
+</button>
+<p class="text-zinc-600 dark:text-zinc-300 text-base font-medium leading-normal">85</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-zinc-900 p-4 rounded-xl shadow-sm">
+<div class="flex items-start gap-4 flex-1">
+<img class="rounded-full h-12 w-12 object-cover" data-alt="Portrait of Emily Carter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtiwdUCV50HBv1qGUonhIY77C1hgIHDrYmx4ywtCBA7Ggti5zb78GWDBSPlE0B0LgvG1AovxvY8SCXEbysmJSx4bNCrlM53IMBN9cgQSafvT_-V60ohYlYNqTfuV28pGKHZNZzGXLncklqLOl5Nsuwjv0EVzeZOwAjElNp-U3PovS5_hzbsgN96fCRkmamxZ8-T5NpDISAzuecYVFYtP2fOCZS50dUI-xbrVD9MsnWlKiI1gp_5J2jfT1TKQgMPQkXFeXST5ZCuJMN"/>
+<div class="flex flex-1 flex-col gap-1">
+<p class="text-zinc-900 dark:text-zinc-100 text-base font-bold leading-tight">The Ethics of Dark Patterns</p>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">A critical look at persuasive design and its ethical implications for users.</p>
+<p class="text-zinc-400 dark:text-zinc-500 text-xs font-medium leading-normal pt-1">Suggested by Emily Carter</p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 shrink-0">
+<button class="flex size-9 items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">
+<span class="material-symbols-outlined text-lg">arrow_upward</span>
+</button>
+<p class="text-zinc-600 dark:text-zinc-300 text-base font-medium leading-normal">62</p>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-6 right-6 z-20">
+<button class="flex h-14 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-primary pl-5 pr-6 text-white shadow-lg transition-all hover:bg-primary/90">
+<span class="material-symbols-outlined text-2xl">add</span>
+<span class="truncate text-base font-bold leading-normal">Suggest Topic</span>
+</button>
+</div>
+</div>
+<script defer="" src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</body></html>

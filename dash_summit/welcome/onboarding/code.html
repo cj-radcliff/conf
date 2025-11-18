@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dash Summit</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<main class="flex-grow">
+<div class="flex flex-col items-center p-4 pt-12 text-center">
+<div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary mb-4">
+<svg class="h-8 w-8 text-white" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h1 class="text-[#111318] dark:text-white tracking-tight text-[32px] font-bold leading-tight pt-2">Dash Summit</h1>
+<p class="text-[#616f89] dark:text-gray-300 text-base font-normal leading-normal pt-2">Your Guide to the 2-Day Tech Conference.</p>
+</div>
+<div class="px-4 pt-6">
+<p class="text-[#111318] dark:text-white text-base font-normal leading-normal">
+          Welcome! This app is your essential companion to navigate sessions, connect with peers, and maximize your summit experience.
+        </p>
+</div>
+<div class="flex flex-wrap gap-4 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl bg-white dark:bg-background-dark/50 p-6 border border-[#dbdfe6] dark:border-gray-700">
+<p class="text-[#616f89] dark:text-gray-400 text-base font-medium leading-normal">Dates</p>
+<p class="text-[#111318] dark:text-white tracking-tight text-2xl font-bold leading-tight">Oct 26-27</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl bg-white dark:bg-background-dark/50 p-6 border border-[#dbdfe6] dark:border-gray-700">
+<p class="text-[#616f89] dark:text-gray-400 text-base font-medium leading-normal">Location</p>
+<p class="text-[#111318] dark:text-white tracking-tight text-2xl font-bold leading-tight">Conference Center</p>
+</div>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-background-dark/50 p-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_month</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#111318] dark:text-white text-base font-bold leading-tight">Full Agenda</h2>
+<p class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-normal">Explore keynotes, breakouts, and sessions across both tracks.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-background-dark/50 p-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-2xl">schedule</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#111318] dark:text-white text-base font-bold leading-tight">Personalized Schedule</h2>
+<p class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-normal">Build your custom itinerary and get session reminders.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-background-dark/50 p-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-2xl">group</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#111318] dark:text-white text-base font-bold leading-tight">Speaker Profiles</h2>
+<p class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-normal">Learn more about our industry-leading speakers.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-background-dark/50 p-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary text-2xl">chat</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#111318] dark:text-white text-base font-bold leading-tight">Networking</h2>
+<p class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-normal">Connect with fellow attendees and sponsors.</p>
+</div>
+</div>
+</div>
+<div class="sticky bottom-0 mt-4 bg-background-light dark:bg-background-dark p-4 pb-6">
+<button class="flex w-full items-center justify-center rounded-xl bg-primary px-6 py-3.5 text-base font-semibold leading-6 text-white shadow-sm transition-transform duration-200 ease-in-out hover:scale-[1.02] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">View Full Agenda</button>
+</div>
+</main>
+</div>
+</body></html>
