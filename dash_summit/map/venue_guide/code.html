@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dash Summit - Venue Map</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="sticky top-0 z-20 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4 pb-2 justify-between border-b border-gray-200 dark:border-gray-800">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Venue Map</h2>
+<div class="relative group">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined text-2xl">more_vert</span>
+</button>
+<div class="absolute right-0 mt-2 w-56 origin-top-right rounded-xl bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+<div class="py-2">
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+<span>Full Schedule</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">person</span>
+<span>My Schedule</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">groups</span>
+<span>Speakers</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">map</span>
+<span>Venue Map</span>
+</a>
+<div class="my-1 h-px bg-gray-200 dark:bg-gray-700"></div>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">help_outline</span>
+<span>Help &amp; FAQ</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 pt-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex bg-white dark:bg-gray-800/50 items-center justify-center pl-4 rounded-l-lg border border-r-0 border-gray-200 dark:border-gray-700">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-l-0 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search rooms, sessions, or services" value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-2 p-4 pt-3 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 pl-4 pr-4">
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Sessions</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 pl-4 pr-4">
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Food</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 pl-4 pr-4">
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Restrooms</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 pl-4 pr-4">
+<p class="text-gray-800 dark:text-gray-300 text-sm font-medium leading-normal">Sponsors</p>
+</div>
+</div>
+<div class="flex px-4 py-3">
+<div class="flex h-10 flex-1 items-center justify-center rounded-lg bg-gray-200/50 dark:bg-gray-800/50 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-white has-[:checked]:dark:bg-gray-700 has-[:checked]:shadow-sm has-[:checked]:text-gray-900 has-[:checked]:dark:text-white text-gray-500 dark:text-gray-400 text-sm font-medium leading-normal transition-all duration-200">
+<span class="truncate">Floor 1</span>
+<input checked="" class="invisible w-0" name="floor-selector" type="radio" value="Floor 1"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-white has-[:checked]:dark:bg-gray-700 has-[:checked]:shadow-sm has-[:checked]:text-gray-900 has-[:checked]:dark:text-white text-gray-500 dark:text-gray-400 text-sm font-medium leading-normal transition-all duration-200">
+<span class="truncate">Floor 2</span>
+<input class="invisible w-0" name="floor-selector" type="radio" value="Floor 2"/>
+</label>
+</div>
+</div>
+<div class="flex flex-1 px-4 pb-4">
+<div class="relative w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl object-cover shadow-sm border border-gray-200 dark:border-gray-800" data-alt="A 2D top-down vector map of the first floor of a conference center, showing various rooms and corridors." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-At2lHAr7jePmUJPBumJqUwx_XQAmtK82vNV1M6li7qiZExjhnmZabsraNyvKs7tDDUpKPbl1A2Ayul2QlX6G_ezgkHLj5ybTE2SRBw_w3RIfVnDzJKQb8bju4ls85VmmPLaVNEtzoSUFLNBoGljvpfiLNmW163DxS37YGoFV04mhkljDi2MW49IAKLjwf_5qEBYEc5aQS3PPgqQo_pVGEsWpyXjeSsyhiuxVTSDnWTNLIveai0dwRoJrLroTLCKYdNV07rwLDeAJ");'>
+<div class="absolute top-4 left-1/2 -translate-x-1/2 flex items-center justify-center">
+<div class="relative flex items-center justify-center">
+<div class="absolute h-5 w-5 animate-ping rounded-full bg-primary/80"></div>
+<div class="h-3 w-3 rounded-full bg-primary ring-4 ring-white dark:ring-gray-800"></div>
+</div>
+<p class="ml-2 text-xs font-bold text-white bg-primary px-2 py-1 rounded-full shadow">You are here</p>
+</div>
+</div>
+</div>
+<div class="sticky bottom-0 z-10 p-2 pt-0">
+<div class="bg-white dark:bg-gray-800/90 backdrop-blur-sm rounded-xl border border-gray-200 dark:border-gray-700 shadow-xl overflow-hidden">
+<div class="p-4">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">door_front</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Grand Ballroom A</h3>
+<p class="text-sm text-primary font-medium">Live Now</p>
+</div>
+</div>
+<div class="mt-4 pl-1">
+<p class="text-base font-semibold text-gray-800 dark:text-gray-200">The Future of UI/UX with AI</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Jane Doe • 10:00 AM - 11:00 AM</p>
+</div>
+</div>
+<div class="bg-gray-50 dark:bg-gray-800 px-4 py-3 border-t border-gray-200 dark:border-gray-700">
+<button class="w-full flex cursor-pointer items-center justify-center rounded-lg h-11 bg-primary text-white gap-2 text-base font-bold leading-normal tracking-[0.015em]">
+            View in Schedule
+          </button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
