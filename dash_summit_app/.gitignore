@@ -33,6 +33,8 @@ migrate_working_dir/
 /build/
 /coverage/
 
+pubspec.lock
+ios/Podfile
 # Symbolication related
 app.*.symbols
 

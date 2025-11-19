@@ -1,3 +1,4 @@
+import 'package:dash_summit_app/pages/schedule/schedule_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -124,7 +125,11 @@ class WelcomePage extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => const SchedulePage()),
+            );
+          },
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xFF135bec),
             padding: const EdgeInsets.symmetric(vertical: 16),
